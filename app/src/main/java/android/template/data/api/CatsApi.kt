@@ -8,10 +8,5 @@ import retrofit2.http.Header
 interface CatsApi {
 
     @GET("breeds")
-    suspend fun getCats(@Header("x-api-key") apiKey: String): Response<List<CatsResponse>>
-}
-
-
-class CatsResponse {
-
+    suspend fun getCats(@Header("x-api-key") apiKey: String): Response<List<CatsResponseDTO>>
 }

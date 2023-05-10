@@ -3,7 +3,7 @@ package android.template.data.api
 import com.google.gson.annotations.SerializedName
 
 data class CatsResponseDTO (
-    val cats: List<CatResponsDTO>
+    val cats: List<CatResponseDTO>
 )
 
 data class CatResponseDTO(

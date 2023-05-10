@@ -4,5 +4,5 @@ import android.template.data.network.Cats
 
 interface CatsRemote {
 
-    suspend fun getCats(apiKey: String):Result<Cats>
+    suspend fun getCats(apiKey: String): Result<List<Cats>>
 }

@@ -17,12 +17,7 @@
 package android.template
 
 import android.app.Application
-import android.template.data.network.CatsRepository
-import android.template.data.network.CatsRepositoryImpl
 import dagger.hilt.android.HiltAndroidApp
-import org.koin.core.context.loadKoinModules
-import org.koin.core.context.startKoin
-import org.koin.dsl.module
 
 @HiltAndroidApp
 class MyApplication : Application() {
@@ -31,6 +26,7 @@ class MyApplication : Application() {
     }
 }
 
+/*
 private fun instantiateDependencies() {
     startKoin {
         loadKoinModules(
@@ -40,4 +36,4 @@ private fun instantiateDependencies() {
                 }
             })
     }
-}
+}*/

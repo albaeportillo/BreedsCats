@@ -54,12 +54,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_18
-        targetCompatibility = JavaVersion.VERSION_18
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "18"
+        jvmTarget = "17"
     }
 
     buildFeatures {
@@ -110,8 +110,8 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.retrofit.retrofit)
     implementation(libs.retrofit.converter.gson)
-    implementation(libs.koin.android)
-    implementation(libs.koin.compose)
+    //implementation(libs.koin.android)
+   // implementation(libs.koin.compose)
     ksp(libs.androidx.room.compiler)
 
     // Compose
